@@ -3,7 +3,7 @@ import { renderRoutes } from 'react-router-config';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import './bottom.css';
+import './tabBottom.css';
 import { connect } from 'react-redux';
 import HeadNumIcon from '../../common/headNumIcon/HeadNumIcon';
 import { actionCreators } from '../../pages/Main/store';
@@ -50,8 +50,8 @@ const Bottom = (props) => {
                 onClick={()=>{setIndexDispatch(1)}}>
                 <Link to='/home/live' style={{textDecoration:"none"}}>
                     <div>  
-                        {index===0?<img src={live_active}/>:<img src={live}/>}             
-                        <div className="planet" style={index===0?{color: '#ec564b'}:{}}>直播</div>
+                        {index===1?<img src={live_active}/>:<img src={live}/>}             
+                        <div className="planet" style={index===1?{color: '#ec564b'}:{}}>直播</div>
                     </div>
                 </Link>
                 </li>
@@ -59,8 +59,8 @@ const Bottom = (props) => {
             onClick={()=>{setIndexDispatch(2)}}>
                 <Link to='/home/search' style={{textDecoration:"none"}}>
                 <div>  
-                        {index===0?<img src={search_active}/>:<img src={search}/>}             
-                        <div className="planet" style={index===0?{color: '#ec564b'}:{}}>搜索</div>
+                        {index===2?<img src={search_active}/>:<img src={search}/>}             
+                        <div className="planet" style={index===2?{color: '#ec564b'}:{}}>搜索</div>
                     </div>
                 </Link>
             </li>
@@ -70,19 +70,19 @@ const Bottom = (props) => {
             } }>
                 <Link to='/home/talk' style={{textDecoration:"none"}}>
                 <div>  
-                    {index===0?<img src={talk_active}/>:<img src={talk}/>}             
-                    <div className="planet" style={index===0?{color: '#ec564b'}:{}}>消息</div>
+                    {index===3?<img src={talk_active}/>:<img src={talk}/>}             
+                    <div className="planet" style={index===3?{color: '#ec564b'}:{}}>消息</div>
                 </div>
                 </Link>
             </li>
             <li className="Botton-warper-warp" key="5"
             onClick={()=>{
-                setIndexDispatch(3);
+                setIndexDispatch(4);
             } }>
                 <Link to='/home/my' style={{textDecoration:"none"}}>8
                     <div>  
-                        {index===0?<img src={my_active}/>:<img src={my}/>}             
-                        <div className="planet" style={index===0?{color: '#ec564b'}:{}}>个人中心</div>
+                        {index===4?<img src={my_active}/>:<img src={my}/>}             
+                        <div className="planet" style={index===4?{color: '#ec564b'}:{}}>个人中心</div>
                     </div>
                 </Link>
             </li>

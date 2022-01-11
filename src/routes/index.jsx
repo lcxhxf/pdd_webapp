@@ -7,7 +7,7 @@ const Live = lazy(()=>import('../pages/Live/Live'))//动态路由 性能优化
 const Search = lazy(()=>import('../pages/Search/Search'))//动态路由 性能优化
 const Talk = lazy(()=>import('../pages/Talk/Talk'))
 const My = lazy(()=>import('../pages/My/My'))
-import Tabbuttom from '../components/tabbuttom/Tabbuttom';
+import Bottom from '../components/tabButtom/tabButtom';
 
 const SuspenseComponent = Component => props => {
     return (
@@ -27,7 +27,7 @@ export default [{
         },
         {
             path:'/home',
-            component: Tabbuttom,
+            component: Bottom,
             routes: [
                 {
                     path: '/home',
