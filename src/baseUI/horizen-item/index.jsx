@@ -30,10 +30,10 @@ function Horizen(props) {
                         list.map((item) => {
                             return (
                                 <ListItem
-                                    key={item.key}
-                                    className={`${oldVal === item.key ? 'selected' : ''}`}
-                                    onClick={() => handleClick(item.key)}>
-                                    {item.name}
+                                    key={item?.key}
+                                    className={`${oldVal === item?.key ? 'selected' : ''}`}
+                                    onClick={() => handleClick(item?.key)}>
+                                    {item?.name}
                                 </ListItem>
                             )
                         })
@@ -71,6 +71,7 @@ const List = styled.div`
   display: flex;
   align-items: center;
   height: 30px;
+  top: 30px;
   overflow: hidden;
   >span:first-of-type {
     display: block;

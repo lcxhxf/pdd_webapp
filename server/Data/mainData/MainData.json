@@ -1,157 +1,154 @@
 {
-    "classify": [
-        "擦玻璃",
-        "空调清洗",
-        "修电脑",
-        "修手机",
-        "空调移机",
-        "洗窗帘",
-        "修灯具"
-    ],
-    "rotationImg": [
-        {
-            "id": 1,
-            "picUrl": "https://yanxuan.nosdn.127.net/e1d32c538a9fcf420411592746098ad2.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
-            "linkUrl": "http://localhost:3000/main"
+    "categoryTypes": [{
+            "name": "热门",
+            "key": "0"
         },
         {
-            "id": 2,
-            "picUrl": "https://yanxuan.nosdn.127.net/7e01b30c2c440e118cf09e14c7a69266.jpg?type=webp&imageView&quality=75&thumbnail=750x0",
-            "linkUrl": "http://localhost:3000/main"
+            "name": "电脑",
+            "key": "1"
         },
         {
-            "id": 3,
-            "picUrl": "https://yanxuan.nosdn.127.net/94408b4d014ce6774e8f768bdf9b6f60.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
-            "linkUrl": "http://localhost:3000/main"
+            "name": "百货",
+            "key": "2"
         },
         {
-            "id": 4,
-            "picUrl": "https://yanxuan.nosdn.127.net/e14d684c9dc43de2af5215c3d49b6870.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
-            "linkUrl": "http://localhost:3000/main"
+            "name": "女装",
+            "key": "3"
         },
         {
-            "id": 5,
-            "picUrl": "https://yanxuan.nosdn.127.net/7e01b30c2c440e118cf09e14c7a69266.jpg?type=webp&imageView&quality=75&thumbnail=750x0",
-            "linkUrl": "http://localhost:3000/main"
+            "name": "内衣",
+            "key": "4"
         },
         {
-            "id": 6,
-            "picUrl": "https://yanxuan.nosdn.127.net/94408b4d014ce6774e8f768bdf9b6f60.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
-            "linkUrl": "http://localhost:3000/main"
+            "name": "食品",
+            "key": "5"
         },
         {
-            "id": 7,
-            "picUrl": "https://yanxuan.nosdn.127.net/e14d684c9dc43de2af5215c3d49b6870.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
-            "linkUrl": "http://localhost:3000/main"
+            "name": "电器",
+            "key": "6"
+        },
+        {
+            "name": "手机",
+            "key": "7"
+        },
+        {
+            "name": "水果",
+            "key": "8"
+        },
+        {
+            "name": "医药",
+            "key": "9"
+        },
+        {
+            "name": "美妆",
+            "key": "10"
+        },
+        {
+            "name": "美妆",
+            "key": "11"
+        },
+        {
+            "name": "家具",
+            "key": "12"
+        },
+        {
+            "name": "男装",
+            "key": "13"
+        },
+        {
+            "name": "鞋包",
+            "key": "14"
+        },
+        {
+            "name": "家纺",
+            "key": "15"
+        },
+        {
+            "name": "饰品",
+            "key": "16"
+        },
+        {
+            "name": "家装",
+            "key": "17"
+        },
+        {
+            "name": "母婴",
+            "key": "18"
+        },
+        {
+            "name": "车品",
+            "key": "19"
+        },
+        {
+            "name": "运动",
+            "key": "20"
+        },
+        {
+            "name": "海淘",
+            "key": "21"
         }
     ],
     "menuBarData": {
-        "list1": [
-            {
+        "list1": [{
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/4847e41c9c4c23b11c252815df12d42a.png?x-oss-process=image/auto-orient,0/format,webp",
-                "type": "日常保洁"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/6bd30s3zQ5lW5cF1bFC7j_9l_1585968296132.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "限时秒杀"
             },
             {
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/64b0a24bebec5e986b7523d24f38c9e8.png",
-                "type": "清洗养护"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/3nlBY9jNYoRbRq8fuBAconk4_1641906924407.gif",
+                "type": "断码清仓"
             },
             {
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/9b04c448bf5a2e53407227abb39b27dc.png",
-                "type": "保姆"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/fkKCARPN0UjSLLZ6OPZEPKTm_1603870813972.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "发现好货"
             },
             {
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/c16a42b496dad271fc602eae789ce1bf.png",
-                "type": "月嫂"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/5eP8JQkGS2XOjdUkeuVnXmm3_1585968314815.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "领券中心"
             },
             {
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/01a443c96c08e02cd32ddd9958f82292.png",
-                "type": "育儿嫂"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/TCDlmopm5PlZzPvACsFrasiK_1585968235210.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "多多果园"
+            },
+            {
+                "id": 1,
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/-6mQ-MLh323QJupgR3IPwCIA_1585968099328.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "省钱月卡"
             }
         ],
-        "list2": [
-            {
+        "list2": [{
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/4847e41c9c4c23b11c252815df12d42a.png?x-oss-process=image/auto-orient,0/format,webp",
-                "type": "房屋维修"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/nUK_he9e5Yb5xxrmyEdlUntW_1585968323602.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "充值中心"
             },
             {
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/64b0a24bebec5e986b7523d24f38c9e8.png",
-                "type": "家电维修"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/Hnk2vB5Ta01T1mXzG0hL9wlR_1585968284125.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "9块9特卖"
             },
             {
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/9b04c448bf5a2e53407227abb39b27dc.png",
-                "type": "上门安装"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/JUp8ASEgEezadP766IRDTgLM_1641386816930.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "年货大促"
             },
             {
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/c16a42b496dad271fc602eae789ce1bf.png",
-                "type": "搬家"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/iUOwjWjtbnAPcnzSlfLhzcMC_1600149797999.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "跟个好评买"
             },
             {
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/01a443c96c08e02cd32ddd9958f82292.png",
-                "type": "拉货"
-            }
-        ],
-        "list3": [
-            {
-                "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/4847e41c9c4c23b11c252815df12d42a.png?x-oss-process=image/auto-orient,0/format,webp",
-                "type": "除虫灭鼠"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/u18tiQ_YmNl2BYqs0XJewfWz_1617713147018.gif",
+                "type": "狂赚20元"
             },
             {
                 "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/64b0a24bebec5e986b7523d24f38c9e8.png",
-                "type": "除甲醛"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/9b04c448bf5a2e53407227abb39b27dc.png",
-                "type": "洗衣洗鞋"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/c16a42b496dad271fc602eae789ce1bf.png",
-                "type": "洗窗帘"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/01a443c96c08e02cd32ddd9958f82292.png",
-                "type": "中医按摩"
-            }
-        ],
-        "list4": [
-            {
-                "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/4847e41c9c4c23b11c252815df12d42a.png?x-oss-process=image/auto-orient,0/format,webp",
-                "type": "医护上门"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/64b0a24bebec5e986b7523d24f38c9e8.png",
-                "type": "送花上门"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/9b04c448bf5a2e53407227abb39b27dc.png",
-                "type": "上门回收"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/c16a42b496dad271fc602eae789ce1bf.png",
-                "type": "便民服务"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://images.daojia.com/dop/custom/01a443c96c08e02cd32ddd9958f82292.png",
-                "type": "全部服务"
+                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/3qnlKtD_Hm84cadWhO7t4jHd_1621950384692.png?imageView2/2/q/50/w/129/format/webp",
+                "type": "行家帮你选"
             }
         ]
     }

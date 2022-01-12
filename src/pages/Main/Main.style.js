@@ -1,24 +1,25 @@
-import styled from'styled-components';
+import styled from 'styled-components';
 import style from '../../assets/global-style';
 
-export const NavContainer  = styled.div`
+export const NavContainer = styled.div `
   box-sizing: border-box;
   position: fixed;
   // top: 95px;
   width: 100%;
+  top:50px;
   padding: 5px;
   overflow: hidden;
 `;
-export const ListContainer = styled.div`
+export const ListContainer = styled.div `
   position: fixed;
-  top: 60px;
+  top: 85px;
   left: 0;
   bottom: 0;
   overflow: hidden;
   width: 100%;
 `;
 
-export const List = styled.div`
+export const List = styled.div `
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -29,7 +30,7 @@ export const List = styled.div`
     font-size: ${style ["font-size-s"]};
   }
 `;
-export const ListItem = styled.div`
+export const ListItem = styled.div `
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -51,3 +52,4 @@ export const ListItem = styled.div`
     font-weight: 500;
   }
 `;
+top

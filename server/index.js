@@ -3,7 +3,7 @@ const Koa = require('koa')
 const router = require('koa-router')()
 const app = new Koa()
 const MainData = require('./Data/mainData/MainData.json')
-const ServerData = require('./Data/serverData/ServerData.json')
+    // const ServerData = require('./Data/serverData/ServerData.json')
 const cors = require('koa2-cors')
 
 app.use(cors({
@@ -20,27 +20,20 @@ app.use(cors({
     exposeHeaders: ['WWW-Authenticate', 'Server-Authorization'] //设置获取其他自定义字段
 }))
 
-router.get('/home/main', async (ctx) => {
+router.get('/home/main', async(ctx) => {
     ctx.response.body = {
         success: true,
         data: MainData
     }
 })
 
-router.get('/home/server',async (ctx)=>{
-    ctx.body = {
-        success:true,
-        data:ServerData
-    }
-})
-
 app
     .use(router.routes())
     .use(router.allowedMethods())
-// 1. http服务
-// 2. 简单的路由模块
-// 3. 跨域
-// 4. 返回数据
+    // 1. http服务
+    // 2. 简单的路由模块
+    // 3. 跨域
+    // 4. 返回数据
 
 app.listen(9090, () => {
     console.log('server is running 9090')
