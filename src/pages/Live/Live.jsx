@@ -1,30 +1,65 @@
-import React ,{memo}from 'react'
+import React, { memo,useEffect,useState } from 'react'
 import './Live.css'
 //import './Live.style.js'
+import * as actionTypes from './store/actionCreator'
 import { connect } from 'react-redux'
-import  Scroll from '../../baseUI/scroll/index'
+import Scroll from '../../baseUI/scroll/index'
+import Goods from '../../components/goods/goods'
+import Cell from '../../components/cell/cell.jsx'
+import Follow from '../../components/follow/follow.jsx'
+import {
+    NavContainer
+} from "./Live.style";
+import Horizen from '../../baseUI/horizen-item';
+
 
 const Live = (props) => {
-    const { category } = props
+    const { livedata } = props
+    const { getLiveDataDispatch } = props
+    let [category, setCategory] = useState('0');
+    // const { categoryTypes = []} = livedata
+    var categoryTypes = [
+        {
+            "name": "推荐",
+            "key": "0"
+        }
+    ]
+    useEffect(() => {      
+            getLiveDataDispatch()
+    }, [])
+    const handleUpdateCatetory = (val) => {
+        setCategory(val);
+    }
     return (
         <>
             <Scroll
                 direction="vertical"
                 refresh={false}
             >
-                <div>
-                    Live
-                </div>
+                <Cell />
+                <Follow />
+                <NavContainer>
+                    <Horizen list={categoryTypes} title={""} handleClick={handleUpdateCatetory}
+                        oldVal={category}></Horizen>
+                </NavContainer>
+                <Goods/>
             </Scroll>
 
         </>
     )
 }
 
-const mapStateToProps = (state) => {
+const mapStateToPorps = (state) => {
     return {
-        category: state.live.category
+        livedata: state.main.livedata
+    }
+}
+const mapStateToDispatch = (dispatch) => {
+    return {
+        getLiveDataDispatch() {
+            dispatch(actionTypes.getLiveData())
+        }
     }
 }
 
-export default connect(mapStateToProps, {})(memo(Live))
+export default connect(mapStateToPorps, mapStateToDispatch)(memo(Live))

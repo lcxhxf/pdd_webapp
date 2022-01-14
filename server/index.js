@@ -3,6 +3,7 @@ const Koa = require('koa')
 const router = require('koa-router')()
 const app = new Koa()
 const MainData = require('./Data/mainData/MainData.json')
+const LiveData = require('./Data/liveData/LiveData.json')
     // const ServerData = require('./Data/serverData/ServerData.json')
 const cors = require('koa2-cors')
 
@@ -24,6 +25,13 @@ router.get('/home/main', async(ctx) => {
     ctx.response.body = {
         success: true,
         data: MainData
+    }
+})
+
+router.get('/home/live', async(ctx) => {
+    ctx.response.body = {
+        success: true,
+        data: LiveData
     }
 })
 

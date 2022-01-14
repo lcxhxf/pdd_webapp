@@ -3,3 +3,6 @@ import Ajax from './ajax.js'
 export const reqmain = () => {
     return Ajax('/home/main')
 }
+export const reqlive = () => {
+    return Ajax('/home/live')
+}

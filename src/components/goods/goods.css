@@ -1,0 +1,13 @@
+.goood-left {
+    width: 180px;
+    height: 250px;
+    background: #000;
+    float: left;
+}
+
+.goood-right {
+    width: 180px;
+    height: 250px;
+    background: #000;
+    float: right;
+}

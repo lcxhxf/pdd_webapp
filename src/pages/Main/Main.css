@@ -1,6 +1,8 @@
 .main {
     height: calc(100vh - 2.65rem);
 }
+
 .main .main-padding {
     padding: 0 0.324rem;
+    background-color: #fff;
 }

@@ -44,9 +44,10 @@ export const SearchBoxstyle = styled.div `
                 }
             }
             .server-search-camera {
-                width: .8703rem;
-                height: .8703rem; 
+                width: .7703rem;
+                height: .7703rem; 
                 margin-left: 3.3rem;
+                margin-top: -0.1222rem;
 
             }
         }

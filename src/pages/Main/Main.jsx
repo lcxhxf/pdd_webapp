@@ -11,6 +11,8 @@ import {
     ListItem
 } from "./Main.style";
 import Scroll from '../../baseUI/scroll/index'
+import Chart from '../../components/chart/chart'
+import Goods from '../../components/goods/goods'
 
 
 const Main = (props) => {
@@ -19,7 +21,7 @@ const Main = (props) => {
     const { maindata } = props
     // action
     const { getMainDataDispatch } = props
-    const { categoryTypes = [], menuBarData=[] } = maindata
+    const { categoryTypes = [], menuBarData = [] } = maindata
 
     useEffect(() => {
         if (!maindata.length) {
@@ -39,8 +41,18 @@ const Main = (props) => {
                     oldVal={category}></Horizen>
             </NavContainer>
             <ListContainer>
-                <Scroll>
-                    <MenuBar menuBarData={menuBarData} />
+                <Scroll
+                    direction="vertical"
+                    refresh={false}
+                >
+                    <div className="">
+                        <MenuBar menuBarData={menuBarData} />
+                        <Chart />
+                        <Goods />
+                        <Goods />
+                        <Goods />
+                    </div>
+
                 </Scroll>
             </ListContainer>
         </div>

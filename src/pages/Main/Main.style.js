@@ -6,17 +6,19 @@ export const NavContainer = styled.div `
   position: fixed;
   // top: 95px;
   width: 100%;
-  top:50px;
+  top:41px;
   padding: 5px;
   overflow: hidden;
+  background-color: #fff;
 `;
 export const ListContainer = styled.div `
   position: fixed;
-  top: 85px;
+  top: 70px;
   left: 0;
   bottom: 0;
   overflow: hidden;
   width: 100%;
+  background-color: #fff;
 `;
 
 export const List = styled.div `
