@@ -18,7 +18,7 @@ export const ListContainer = styled.div `
   bottom: 0;
   overflow: hidden;
   width: 100%;
-  background-color: #fff;
+  background-color: #f4f4f4;
 `;
 
 export const List = styled.div `

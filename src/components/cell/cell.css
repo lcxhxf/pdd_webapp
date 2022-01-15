@@ -1,0 +1,15 @@
+.cell-left {
+    float: left;
+}
+
+.cell-right-text {
+    color: #b1b1b1;
+    float: right;
+}
+
+.cell-right-img img {
+    width: 17px;
+    height: 17px;
+    float: right;
+    margin-top: 3px;
+}

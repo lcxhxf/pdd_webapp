@@ -138,7 +138,7 @@
             {
                 "id": 1,
                 "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/iUOwjWjtbnAPcnzSlfLhzcMC_1600149797999.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "跟个好评买"
+                "type": "跟好评买"
             },
             {
                 "id": 1,
@@ -148,7 +148,7 @@
             {
                 "id": 1,
                 "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/3qnlKtD_Hm84cadWhO7t4jHd_1621950384692.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "行家帮你选"
+                "type": "行家帮你"
             }
         ]
     }

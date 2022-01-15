@@ -1,4 +1,4 @@
-import React, { memo,useEffect,useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import './Live.css'
 //import './Live.style.js'
 import * as actionTypes from './store/actionCreator'
@@ -8,7 +8,7 @@ import Goods from '../../components/goods/goods'
 import Cell from '../../components/cell/cell.jsx'
 import Follow from '../../components/follow/follow.jsx'
 import {
-    NavContainer
+    NavContainer, FollowStyle, GoodsStyle
 } from "./Live.style";
 import Horizen from '../../baseUI/horizen-item';
 
@@ -22,10 +22,38 @@ const Live = (props) => {
         {
             "name": "推荐",
             "key": "0"
-        }
+        },
+        {
+            "name": "推荐",
+            "key": "1"
+        },
+        {
+            "name": "推荐",
+            "key": "2"
+        },
+        {
+            "name": "推荐",
+            "key": "3"
+        },
+        {
+            "name": "推荐",
+            "key": "4"
+        },
+        {
+            "name": "推荐",
+            "key": "5"
+        },
+        {
+            "name": "推荐",
+            "key": "6"
+        },
+        {
+            "name": "推荐",
+            "key": "7"
+        },
     ]
-    useEffect(() => {      
-            getLiveDataDispatch()
+    useEffect(() => {
+        getLiveDataDispatch()
     }, [])
     const handleUpdateCatetory = (val) => {
         setCategory(val);
@@ -37,12 +65,17 @@ const Live = (props) => {
                 refresh={false}
             >
                 <Cell />
-                <Follow />
+                <FollowStyle>
+                    <Follow />
+                </FollowStyle>
                 <NavContainer>
                     <Horizen list={categoryTypes} title={""} handleClick={handleUpdateCatetory}
                         oldVal={category}></Horizen>
                 </NavContainer>
-                <Goods/>
+                <GoodsStyle>
+                    <Goods />
+                </GoodsStyle>
+
             </Scroll>
 
         </>

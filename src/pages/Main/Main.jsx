@@ -49,10 +49,7 @@ const Main = (props) => {
                         <MenuBar menuBarData={menuBarData} />
                         <Chart />
                         <Goods />
-                        <Goods />
-                        <Goods />
                     </div>
-
                 </Scroll>
             </ListContainer>
         </div>
