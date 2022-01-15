@@ -1,14 +1,14 @@
 .follow {
     width: 100%;
-    height: 500px;
+    height: 140px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 
 .follow-child {
-    width: 180px;
-    height: 265px;
+    width: 110px;
+    height: 135px;
     background: #fff;
     margin-left: 5px;
     margin-top: 5px;
@@ -18,4 +18,15 @@
 .follow-child-img {
     width: 110px;
     height: 135px;
+}
+
+.follow-child-gif {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.follow-child-gif img {
+    width: 20px;
+    height: 20px;
 }

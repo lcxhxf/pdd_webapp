@@ -69,11 +69,13 @@ export default memo(Horizen);
 // 由于基础组件样式较少，直接写在 index.js 中
 const List = styled.div`
   display: flex;
-  align-items: center;
-  flex-direction: row
-  height: 30px;
+  flex-direction: column;
+  flex:1;
+  height: 100vh;
+  width: 70px;
   top: 30px;
   overflow: hidden;
+  margin-top: 40px;
   >span:first-of-type {
     display: block;
     flex: 0 0 auto;
@@ -87,7 +89,7 @@ const List = styled.div`
 const ListItem = styled.span`
   flex: 0 0 auto;
   font-size: ${style["font-size-m"]};
-  padding: 5px 8px;
+  padding: 15px 20px;
   border-radius: 10px;
   &.selected {
     color: ${style["theme-color"]};

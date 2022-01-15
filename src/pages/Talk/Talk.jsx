@@ -2,6 +2,7 @@ import React ,{memo}from 'react'
 import './Talk.css'
 import { connect } from 'react-redux' 
 import Scroll  from '../../baseUI/scroll/index'
+import img1 from '../../assets/images/1.jpg'
 
 const Talk = (props) =>{
    
@@ -13,8 +14,8 @@ const Talk = (props) =>{
                 direction="vertical"
                 refresh={false}
             >
-                <div>
-                    Talk
+                <div className='talk'>
+                   <img src={img1} alt="" />
                 </div>
             </Scroll>
         </>

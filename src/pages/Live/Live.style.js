@@ -10,11 +10,11 @@ export const NavContainer = styled.div `
   padding: 5px;
   overflow: hidden;
   background-color: #fff;
-  margin-top: 100px;
+  margin-top: 167px;
 `;
 export const FollowStyle = styled.div `
-  margin-top: 30px;
+  margin-top: 0px;
 `;
 export const GoodsStyle = styled.div `
-  margin-top: 160px;
+  margin-top: 58px;
 `;

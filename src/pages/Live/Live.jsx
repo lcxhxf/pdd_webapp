@@ -51,6 +51,22 @@ const Live = (props) => {
             "name": "推荐",
             "key": "7"
         },
+        {
+            "name": "推荐",
+            "key": "8"
+        },
+        {
+            "name": "推荐",
+            "key": "9"
+        },
+        {
+            "name": "推荐",
+            "key": "10"
+        },
+        {
+            "name": "推荐",
+            "key": "11"
+        },
     ]
     useEffect(() => {
         getLiveDataDispatch()
@@ -60,23 +76,26 @@ const Live = (props) => {
     }
     return (
         <>
-            <Scroll
-                direction="vertical"
-                refresh={false}
-            >
-                <Cell />
-                <FollowStyle>
-                    <Follow />
-                </FollowStyle>
-                <NavContainer>
-                    <Horizen list={categoryTypes} title={""} handleClick={handleUpdateCatetory}
-                        oldVal={category}></Horizen>
-                </NavContainer>
-                <GoodsStyle>
-                    <Goods />
-                </GoodsStyle>
+            <div className="Live">
+                <p className='Live-title'>直播</p>
+                <Scroll
+                    direction="vertical"
+                    refresh={false}
+                >
+                    <Cell />
+                    <FollowStyle>
+                        <Follow />
+                    </FollowStyle>
+                    <NavContainer>
+                        <Horizen list={categoryTypes} title={""} handleClick={handleUpdateCatetory}
+                            oldVal={category}></Horizen>
+                    </NavContainer>
+                    <GoodsStyle>
+                        <Goods />
+                    </GoodsStyle>
+                </Scroll>
+            </div>
 
-            </Scroll>
 
         </>
     )

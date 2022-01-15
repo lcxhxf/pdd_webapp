@@ -6,7 +6,7 @@ export const NavContainer = styled.div `
   position: fixed;
   // top: 95px;
   width: 100%;
-  top:41px;
+  top:30px;
   padding: 5px;
   overflow: hidden;
   background-color: #fff;

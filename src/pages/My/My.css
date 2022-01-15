@@ -1,0 +1,9 @@
+.my-head {
+    display: flex;
+}
+
+.my-head-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
