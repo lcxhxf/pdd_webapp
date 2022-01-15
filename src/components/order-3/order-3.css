@@ -1,0 +1,37 @@
+.order-style {
+    background-color: #fff;
+}
+
+.order {
+    background-color: #fff;
+    width: 335px;
+    height: 100px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.order2 {
+    background-color: #fff;
+    width: 335px;
+    height: 100px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.order-child {
+    margin-top: 10px;
+    width: 67px;
+    text-align: center;
+}
+
+.order-child2 {
+    margin-top: 10px;
+    width: 67px;
+    text-align: center;
+}
+
+.order-img {
+    width: 40px;
+    height: 40px;
+}
