@@ -32,6 +32,7 @@ const Main = (props) => {
     const handleUpdateCatetory = (val) => {
         setCategory(val);
     }
+    
 
     return (
         
