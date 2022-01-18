@@ -88,68 +88,146 @@
             "key": "21"
         }
     ],
-    "menuBarData": {
-        "list1": [{
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/6bd30s3zQ5lW5cF1bFC7j_9l_1585968296132.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "限时秒杀"
+    "goodsData":[
+        {
+            "menuBarData": {
+                "list1": [{
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/6bd30s3zQ5lW5cF1bFC7j_9l_1585968296132.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "限时秒杀"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/3nlBY9jNYoRbRq8fuBAconk4_1641906924407.gif",
+                        "type": "断码清仓"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/fkKCARPN0UjSLLZ6OPZEPKTm_1603870813972.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "发现好货"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/5eP8JQkGS2XOjdUkeuVnXmm3_1585968314815.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "领券中心"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/TCDlmopm5PlZzPvACsFrasiK_1585968235210.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "多多果园"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/-6mQ-MLh323QJupgR3IPwCIA_1585968099328.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "省钱月卡"
+                    }
+                ],
+                "list2": [{
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/nUK_he9e5Yb5xxrmyEdlUntW_1585968323602.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "充值中心"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/Hnk2vB5Ta01T1mXzG0hL9wlR_1585968284125.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "9块9特卖"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/JUp8ASEgEezadP766IRDTgLM_1641386816930.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "年货大促"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/iUOwjWjtbnAPcnzSlfLhzcMC_1600149797999.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "跟好评买"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/u18tiQ_YmNl2BYqs0XJewfWz_1617713147018.gif",
+                        "type": "狂赚20元"
+                    },
+                    {
+                        "id": 1,
+                        "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/3qnlKtD_Hm84cadWhO7t4jHd_1621950384692.png?imageView2/2/q/50/w/129/format/webp",
+                        "type": "行家帮你"
+                    }
+                ]
             },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/3nlBY9jNYoRbRq8fuBAconk4_1641906924407.gif",
-                "type": "断码清仓"
+            "chartData":{
+                "picUrl1": "../../assets/images/14-44-43.png",
+                "picUrl2": "../../assets/images/14-44-47.png",
+                "picUrl3": "../../assets/images/15-04-21.png",
+                "picUrl4": "../../assets/images/15-04-34.png"
             },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/fkKCARPN0UjSLLZ6OPZEPKTm_1603870813972.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "发现好货"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/5eP8JQkGS2XOjdUkeuVnXmm3_1585968314815.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "领券中心"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/TCDlmopm5PlZzPvACsFrasiK_1585968235210.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "多多果园"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/-6mQ-MLh323QJupgR3IPwCIA_1585968099328.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "省钱月卡"
-            }
-        ],
-        "list2": [{
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/nUK_he9e5Yb5xxrmyEdlUntW_1585968323602.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "充值中心"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/Hnk2vB5Ta01T1mXzG0hL9wlR_1585968284125.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "9块9特卖"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/JUp8ASEgEezadP766IRDTgLM_1641386816930.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "年货大促"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/iUOwjWjtbnAPcnzSlfLhzcMC_1600149797999.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "跟好评买"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/u18tiQ_YmNl2BYqs0XJewfWz_1617713147018.gif",
-                "type": "狂赚20元"
-            },
-            {
-                "id": 1,
-                "picUrl": "https://xcxcdn.yangkeduo.com/wxapp/admin_gateway/upload/common/oms/index/3qnlKtD_Hm84cadWhO7t4jHd_1621950384692.png?imageView2/2/q/50/w/129/format/webp",
-                "type": "行家帮你"
-            }
-        ]
-    }
+            "goodData":[
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                },
+                {
+                    "picUrl": "../../assets/images/15-31-35.png"
+                }
+            ]
+        } 
+    ]  
 }

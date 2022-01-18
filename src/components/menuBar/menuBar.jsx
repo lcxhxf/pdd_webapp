@@ -5,6 +5,7 @@ import Swiper from 'swiper';
 import "swiper/css/swiper.min.css";
 
 function MenuBar(props) {
+    // console.log(props,"111111111111");
     const { menuBarData } = props
     useEffect(() => {
         new Swiper('.swiper-container-menu', {

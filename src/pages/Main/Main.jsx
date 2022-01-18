@@ -21,21 +21,26 @@ const Main = (props) => {
     const { maindata } = props
     // action
     const { getMainDataDispatch } = props
-    const { categoryTypes = [], menuBarData = [] } = maindata
 
+    const { categoryTypes = [], goodsData = [] } = maindata
+
+    const { menuBarData = [], chartData = {}, goodData = [] } = goodsData
+    console.log(menuBarData, '11111111111111');
+    console.log(goodsData, '222222222222222');
     useEffect(() => {
         if (!maindata.length) {
             getMainDataDispatch()
         }
+
     }, [])
 
     const handleUpdateCatetory = (val) => {
         setCategory(val);
     }
-    
 
+    // console.log(maindata, '++++++++++++++==');
     return (
-        
+
         <div className="main">
             <SearchBox />
             <NavContainer>

@@ -23,7 +23,7 @@ export const getMainData = () => {
     return (dispatch) => {
             reqmain()
                 .then((res) => {
-                    console.log(res.data.data)
+                    // console.log(res.data.data)
                     dispatch(changeMainData(res.data.data))
                 })
                 .catch((e) => {
