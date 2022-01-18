@@ -8,6 +8,7 @@ const Search = lazy(()=>import('../pages/Search/Search'))//动态路由 性能�
 const Talk = lazy(()=>import('../pages/Talk/Talk'))
 const My = lazy(()=>import('../pages/My/My'))
 const Find = lazy(()=>import('../pages/Find/Find'))
+const GoodsDetail = lazy(()=>import('../pages/GoodsDetail/GoodsDetail'))
 import Bottom from '../components/tabButtom/tabButtom';
 
 const SuspenseComponent = Component => props => {
@@ -64,7 +65,13 @@ export default [{
                     path: '/home/find',
                     //动态路由 性能优化
                     component: SuspenseComponent(Find),
+                },
+                {
+                    path: '/home/goodsdetail',
+                    //动态路由 性能优化
+                    component: SuspenseComponent(GoodsDetail),
                 }
+                
             ]
         }
     ]

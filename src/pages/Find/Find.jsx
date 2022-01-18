@@ -7,13 +7,22 @@ import imgCamera from '../../assets/images/相机.png'
 import Scroll from '../../baseUI/scroll/index'
 import img1 from '../../assets/images/指南针.png'
 import img2 from '../../assets/images/眼睛.png'
+import img3 from '../../assets/images/返回.png'
+import { useHistory } from 'react-router-dom'
 
 
 const Find = (props) => {
-
+    const history = useHistory()
+    const handleClick = () => {
+        history.push('/home/main')
+    }
     return (
         <>
             <div className="find">
+                <div className="find-back">
+                    <div className=""  onClick={() => { handleClick() }}><img src={img3} alt="" /></div>
+                    <div className="find-back-title">拼多多</div>
+                </div>
                 <SearchBoxstyle >
                     <div className="server-search-input" >
                         <div className="server-search-place">

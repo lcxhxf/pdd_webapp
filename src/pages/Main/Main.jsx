@@ -22,11 +22,10 @@ const Main = (props) => {
     // action
     const { getMainDataDispatch } = props
 
-    const { categoryTypes = [], goodsData = [] } = maindata
+    const { categoryTypes = [], menuBarData = {},goodData = [] } = maindata
 
-    const { menuBarData = [], chartData = {}, goodData = [] } = goodsData
     console.log(menuBarData, '11111111111111');
-    console.log(goodsData, '222222222222222');
+    // console.log(goodsData, '222222222222222');
     useEffect(() => {
         if (!maindata.length) {
             getMainDataDispatch()
@@ -55,7 +54,7 @@ const Main = (props) => {
                     <div className="">
                         <MenuBar menuBarData={menuBarData} />
                         <Chart />
-                        <Goods />
+                        <Goods goodData={goodData}/>
                     </div>
                 </Scroll>
             </ListContainer>

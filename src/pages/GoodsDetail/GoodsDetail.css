@@ -1,0 +1,127 @@
+.goodsdetail-back {
+    display: flex;
+    background-color: #fff;
+}
+.goodsdetail-back-title {
+    width: 300px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+}
+.goodsdetail-back img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.goodsdetail-Rotation img{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1px;
+}
+.goodsdetail-introduction {
+    margin-top: -7px;
+}
+.goodsdetail-introduction-price,.goodsdetail-introduction-share,.goodsdetail-introduction-afterSale {
+    display: flex;
+    background-color: #fff;
+}
+.goodsdetail-introduction-price {
+    height: 50px;
+    
+}
+.goodsdetail-introduction-price-left {
+    line-height: 50px;
+    font-size: 25px;
+    color: red;
+    width: 270px;
+    margin-left: 10px;
+}
+.goodsdetail-introduction-price-right {
+    margin-top: 9px;
+    font-size: 15px;
+    line-height: 40px;
+}
+.goodsdetail-introduction-share {
+    height: 60px;
+}
+.goodsdetail-introduction-share-left {
+    margin-left: 10px;
+    width: 300px;
+}
+.goodsdetail-introduction-share-right img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+.goodsdetail-introduction-afterSale {
+    margin-top: 1px;
+    height: 35px;
+    line-height: 35px;
+}
+.goodsdetail-introduction-afterSale-left {
+    margin-left: 10px;
+    font-size: 15px;
+}
+.goodsdetail-introduction-afterSale-right img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.goodsdetail-introduction-spell-title {
+    display: flex;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.goodsdetail-introduction-spell-title {
+    height: 40px;
+    line-height: 40px;
+}
+.goodsdetail-introduction-spell-title img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+.goodsdetail-introduction-spell-title1 {
+    margin-left: 10px;
+}
+.goodsdetail-introduction-spell-title2 {
+    font-size: 12px;
+    color: #9c9c9c;
+    margin-left: 50px;
+}
+.goodsdetail-introduction-spell-title3 {
+    font-size: 12px;
+    color: #9c9c9c;
+    margin-left: 185px;
+}
+.goodsdetail-introduction-spell-pictop{
+    display: flex;
+    background-color: #fff;
+    margin-top: 1px;
+    height: 60px;
+    line-height: 60px;
+}
+.goodsdetail-introduction-spell-pictop img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.goodsdetail-introduction-spell-pictop-name {
+    width: 200px;
+    margin-left: 15px;
+}
+.goodsdetail-introduction-spell-pictop-btn {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background-color:#e02e24;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SearchBoxstyle = styled.div `
     position: fixed;
-    top: 0;
+    top: 45px;
     width: 100%;
     display: flex;
     padding: .1759rem/* 19/108 */;

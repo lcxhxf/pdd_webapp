@@ -6,11 +6,15 @@ import {
 import img1 from '../../assets/images/15-31-35.png'
 import img2 from '../../assets/images/15-31-39.png'
 import img3 from '../../assets/images/点赞.png'
+import { useHistory } from 'react-router-dom'
 
 function Goods() {
-
+    const history = useHistory()
+    const handleClick = () => {
+        history.push('/home/goodsdetail')
+    }
     return (
-        <div className='goods'>
+        <div className='goods' onClick={() => { handleClick() }}>
             <div className="goods-child">
                 <img src={img1} alt="" />
                 <p className='goods-child-text1'>

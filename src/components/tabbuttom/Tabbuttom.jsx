@@ -34,7 +34,7 @@ const Bottom = (props) => {
         {/* fdfdasfafaafdas */}
         {/* 二级路由而准备 */}
         {renderRoutes(route.routes)}
-        <ul className="Botton-warper">
+        <ul className="Botton-warper" style={index == 5 || index == 6?{display:"none"}:{}}>
             <li 
             onClick={()=>{setIndexDispatch(0)}}
             className="Botton-warper-warp" 
