@@ -15,6 +15,7 @@ import Horizen from '../../baseUI/horizen-item';
 
 const Live = (props) => {
     const { livedata } = props
+    
     const { getLiveDataDispatch } = props
     let [category, setCategory] = useState('0');
     // const { categoryTypes = []} = livedata

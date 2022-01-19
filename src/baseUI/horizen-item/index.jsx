@@ -7,6 +7,7 @@ import style from '../../assets/global-style';
 function Horizen(props) {
 
     const { list, oldVal, title } = props;
+    // console.log(list,'2222222222222222');
     const { handleClick } = props;
     // 加入声明
     const Category = useRef(null);
@@ -15,11 +16,12 @@ function Horizen(props) {
     useEffect(() => {
         let categoryDOM = Category.current;
         let tagElems = categoryDOM.querySelectorAll("span");
-        let totalWidth = 0;
+        let totalWidth = 966;
         Array.from(tagElems).forEach(ele => {
             totalWidth += ele.offsetWidth;
         });
         categoryDOM.style.width = `${totalWidth}px`;
+        // console.log(categoryDOM.style.width);
     }, []);
     return (
         <Scroll direction={"horizental"}>

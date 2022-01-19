@@ -12,7 +12,7 @@ import {
 } from "./Main.style";
 import Scroll from '../../baseUI/scroll/index'
 import Chart from '../../components/chart/chart'
-import Goods from '../../components/goods/goods'
+import Maingoods from '../../components/maingoods/maingoods'
 
 
 const Main = (props) => {
@@ -24,7 +24,7 @@ const Main = (props) => {
 
     const { categoryTypes = [], menuBarData = {},goodData = [] } = maindata
 
-    console.log(menuBarData, '11111111111111');
+    // console.log(menuBarData, '11111111111111');
     // console.log(goodsData, '222222222222222');
     useEffect(() => {
         if (!maindata.length) {
@@ -54,7 +54,7 @@ const Main = (props) => {
                     <div className="">
                         <MenuBar menuBarData={menuBarData} />
                         <Chart />
-                        <Goods goodData={goodData}/>
+                        <Maingoods goodData={goodData} oldVal={category}/>
                     </div>
                 </Scroll>
             </ListContainer>
