@@ -8,14 +8,14 @@ import Goods from '../../components/goods/goods'
 import Cell from '../../components/cell/cell.jsx'
 import Follow from '../../components/follow/follow.jsx'
 import {
-    NavContainer, FollowStyle, GoodsStyle
+    NavContainer, FollowStyle, GoodsStyle,ListContainer
 } from "./Live.style";
 import Horizen from '../../baseUI/horizen-item';
 
 
 const Live = (props) => {
     const { livedata } = props
-    
+
     const { getLiveDataDispatch } = props
     let [category, setCategory] = useState('0');
     // const { categoryTypes = []} = livedata
@@ -77,24 +77,29 @@ const Live = (props) => {
     }
     return (
         <>
-            <div className="Live">
-                <p className='Live-title'>直播</p>
-                <Scroll
-                    direction="vertical"
-                    refresh={false}
-                >
-                    <Cell />
-                    <FollowStyle>
-                        <Follow />
-                    </FollowStyle>
-                    <NavContainer>
-                        <Horizen list={categoryTypes} title={""} handleClick={handleUpdateCatetory}
-                            oldVal={category}></Horizen>
-                    </NavContainer>
-                    <GoodsStyle>
-                        <Goods />
-                    </GoodsStyle>
-                </Scroll>
+            <div className="Live">             
+                <ListContainer>
+                    <Scroll
+                        direction="vertical"
+                        refresh={false}
+                    >
+                        <div>
+                        <p className='Live-title'>直播</p>
+                        <Cell />
+                        <FollowStyle>
+                            <Follow />
+                        </FollowStyle>
+                        <NavContainer>
+                            <Horizen list={categoryTypes} title={""} handleClick={handleUpdateCatetory}
+                                oldVal={category}></Horizen>
+                        </NavContainer>
+                        <GoodsStyle>
+                            <Goods />
+                        </GoodsStyle>
+                        </div>
+                    </Scroll>
+                </ListContainer>
+
             </div>
 
 

@@ -1,4 +1,4 @@
-import React, { memo,useState } from 'react'
+import React, { memo, useState } from 'react'
 import './Search.css'
 //import './Search.style.js'
 import { connect } from 'react-redux'
@@ -76,10 +76,10 @@ const Search = (props) => {
     return (
         <>
             <div className="Search">
-                    <SearchBox />
-                    <Horizen list={categoryTypes} title={""} handleClick={handleUpdateCatetory}
+                <SearchBox />
+                <Horizen list={categoryTypes} title={""} handleClick={handleUpdateCatetory}
                     oldVal={category}></Horizen>
-                        <Sort/>                
+                <Sort />
             </div>
         </>
     )

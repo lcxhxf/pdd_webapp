@@ -13,6 +13,7 @@ import {
 import Scroll from '../../baseUI/scroll/index'
 import Chart from '../../components/chart/chart'
 import Maingoods from '../../components/maingoods/maingoods'
+import Loading from '../../baseUI/loading';
 
 
 const Main = (props) => {
@@ -50,6 +51,8 @@ const Main = (props) => {
                 <Scroll
                     direction="vertical"
                     refresh={false}
+                    pullUpLoading={true}
+                    pullDownLoading={true}
                 >
                     <div className="">
                         <MenuBar menuBarData={menuBarData} />

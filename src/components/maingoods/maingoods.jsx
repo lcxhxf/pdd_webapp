@@ -14,9 +14,10 @@ function Maingoods(props) {
     const handleClick = () => {
         history.push('/home/goodsdetail')
     }
+    let list = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     return (
         <div className='goods' onClick={() => { handleClick() }}>
-            <div className="goods-child">
+            {/* <div className="goods-child">
                 <img src={goodData[oldVal]?.picUrl} alt="" />
                 <p className='goods-child-text1'>
                     <img src={img2} alt="" />
@@ -30,112 +31,26 @@ function Maingoods(props) {
                     <a className='goods-child-text3-a1'>￥2985.99</a>
                     <a className='goods-child-text3-a2'>已拼434件</a>
                 </p>
-            </div>
-            <div className="goods-child">
-                <img src={goodData[oldVal]?.picUrl} alt="" />
-                <p className='goods-child-text1'>
-                    <img src={img2} alt="" />
-                    Apple/苹果平板电脑</p>
-                <p className='goods-child-text2'>
-                    <a className='goods-child-text2-img'><img src={img3} alt="" /></a>
-                    <a className='goods-child-text2-a1'>小编推荐</a>
-                    <a className='goods-child-text2-a2'>顺丰包邮</a>
-                </p>
-                <p className='goods-child-text3'>
-                    <a className='goods-child-text3-a1'>￥2985.99</a>
-                    <a className='goods-child-text3-a2'>已拼434件</a>
-                </p>
-            </div>
-            <div className="goods-child">
-                <img src={goodData[oldVal]?.picUrl} alt="" />
-                <p className='goods-child-text1'>
-                    <img src={img2} alt="" />
-                    Apple/苹果平板电脑</p>
-                <p className='goods-child-text2'>
-                    <a className='goods-child-text2-img'><img src={img3} alt="" /></a>
-                    <a className='goods-child-text2-a1'>小编推荐</a>
-                    <a className='goods-child-text2-a2'>顺丰包邮</a>
-                </p>
-                <p className='goods-child-text3'>
-                    <a className='goods-child-text3-a1'>￥2985.99</a>
-                    <a className='goods-child-text3-a2'>已拼434件</a>
-                </p>
-            </div>
-            <div className="goods-child">
-                <img src={goodData[oldVal]?.picUrl} alt="" />
-                <p className='goods-child-text1'>
-                    <img src={img2} alt="" />
-                    Apple/苹果平板电脑</p>
-                <p className='goods-child-text2'>
-                    <a className='goods-child-text2-img'><img src={img3} alt="" /></a>
-                    <a className='goods-child-text2-a1'>小编推荐</a>
-                    <a className='goods-child-text2-a2'>顺丰包邮</a>
-                </p>
-                <p className='goods-child-text3'>
-                    <a className='goods-child-text3-a1'>￥2985.99</a>
-                    <a className='goods-child-text3-a2'>已拼434件</a>
-                </p>
-            </div>
-            <div className="goods-child">
-                <img src={goodData[oldVal]?.picUrl} alt="" />
-                <p className='goods-child-text1'>
-                    <img src={img2} alt="" />
-                    Apple/苹果平板电脑</p>
-                <p className='goods-child-text2'>
-                    <a className='goods-child-text2-img'><img src={img3} alt="" /></a>
-                    <a className='goods-child-text2-a1'>小编推荐</a>
-                    <a className='goods-child-text2-a2'>顺丰包邮</a>
-                </p>
-                <p className='goods-child-text3'>
-                    <a className='goods-child-text3-a1'>￥2985.99</a>
-                    <a className='goods-child-text3-a2'>已拼434件</a>
-                </p>
-            </div>
-            <div className="goods-child">
-                <img src={goodData[oldVal]?.picUrl} alt="" />
-                <p className='goods-child-text1'>
-                    <img src={img2} alt="" />
-                    Apple/苹果平板电脑</p>
-                <p className='goods-child-text2'>
-                    <a className='goods-child-text2-img'><img src={img3} alt="" /></a>
-                    <a className='goods-child-text2-a1'>小编推荐</a>
-                    <a className='goods-child-text2-a2'>顺丰包邮</a>
-                </p>
-                <p className='goods-child-text3'>
-                    <a className='goods-child-text3-a1'>￥2985.99</a>
-                    <a className='goods-child-text3-a2'>已拼434件</a>
-                </p>
-            </div>
-            <div className="goods-child">
-                <img src={goodData[oldVal]?.picUrl} alt="" />
-                <p className='goods-child-text1'>
-                    <img src={img2} alt="" />
-                    Apple/苹果平板电脑</p>
-                <p className='goods-child-text2'>
-                    <a className='goods-child-text2-img'><img src={img3} alt="" /></a>
-                    <a className='goods-child-text2-a1'>小编推荐</a>
-                    <a className='goods-child-text2-a2'>顺丰包邮</a>
-                </p>
-                <p className='goods-child-text3'>
-                    <a className='goods-child-text3-a1'>￥2985.99</a>
-                    <a className='goods-child-text3-a2'>已拼434件</a>
-                </p>
-            </div>
-            <div className="goods-child">
-                <img src={goodData[oldVal]?.picUrl} alt="" />
-                <p className='goods-child-text1'>
-                    <img src={img2} alt="" />
-                    Apple/苹果平板电脑</p>
-                <p className='goods-child-text2'>
-                    <a className='goods-child-text2-img'><img src={img3} alt="" /></a>
-                    <a className='goods-child-text2-a1'>小编推荐</a>
-                    <a className='goods-child-text2-a2'>顺丰包邮</a>
-                </p>
-                <p className='goods-child-text3'>
-                    <a className='goods-child-text3-a1'>￥2985.99</a>
-                    <a className='goods-child-text3-a2'>已拼434件</a>
-                </p>
-            </div>
+            </div> */}
+            {
+                list.map((item,index) => {
+                    return <div className="goods-child" key={index}>
+                    <img src={goodData[oldVal]?.picUrl} alt="" />
+                    <p className='goods-child-text1'>
+                        <img src={img2} alt="" />
+                        Apple/苹果平板电脑</p>
+                    <p className='goods-child-text2'>
+                        <a className='goods-child-text2-img'><img src={img3} alt="" /></a>
+                        <a className='goods-child-text2-a1'>小编推荐</a>
+                        <a className='goods-child-text2-a2'>顺丰包邮</a>
+                    </p>
+                    <p className='goods-child-text3'>
+                        <a className='goods-child-text3-a1'>￥2985.99</a>
+                        <a className='goods-child-text3-a2'>已拼434件</a>
+                    </p>
+                </div>
+                })
+            }
         </div>
 
     )

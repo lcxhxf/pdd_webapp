@@ -1,6 +1,7 @@
 .Live {
     text-align: center;
     font-size: 16px;
+    height: calc(100vh - 2.65rem);
     background-color: #f4f4f4;
 }
 
