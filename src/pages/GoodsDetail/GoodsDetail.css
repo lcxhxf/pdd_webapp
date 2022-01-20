@@ -1,3 +1,12 @@
+.buy-hover {
+    width: 100%;
+    height: 10000px;
+    background-color: #333333;
+    position: absolute;
+    top: 0px;
+    opacity:0.5;
+    z-index: 1;
+}
 .goodsdetail-back {
     display: flex;
     background-color: #fff;
@@ -7,6 +16,7 @@
     text-align: center;
     line-height: 50px;
     font-weight: 700;
+    
 }
 .goodsdetail-back img {
     width: 20px;
@@ -204,4 +214,108 @@
     text-align: center;
     padding: 10px 0 0 0;
     background-color: #e02e24;
+}
+.buy {
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 550px;
+    background-color: #f4f4f4;
+    z-index: 2;
+}
+.buy-head {
+    display: flex;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fff;
+    
+}
+.buy-head-title {
+    width: 360px;
+}
+.buy-head img{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.buy-address {
+    display: flex;
+    height: 60px;
+    line-height: 30px;
+    background-color: #fff;
+    margin-top: 2px;
+}
+.buy-address img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.buy-img {
+    display: flex;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.buy-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.buy-img-num {
+    display: flex;
+}
+.buy-img-num img {
+    width: 30px;
+    height: 30px;
+}
+.buy-img-price {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #e02e24;
+    font-size: 17px;
+}
+.buy-img-name {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.buy-img-add {
+    text-align: center;
+}
+.buy-img-add-num {
+    line-height: 46px;
+    margin-left: 10px;
+}
+.buy-kind {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 200px; */
+    background-color: #fff;
+}
+.buy-kind div {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 0 3px 0 3px;
+}
+.buy-kind-title {
+    display: inline-block;
+    margin-left: 10px;
+    width: 100%;
+}
+.buy-buttom {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
 }
