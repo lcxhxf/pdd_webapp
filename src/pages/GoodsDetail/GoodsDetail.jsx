@@ -1,6 +1,8 @@
 import React, { memo, useState,useEffect } from 'react'
 import { connect } from 'react-redux'
 import './GoodsDetail.css'
+import Swiper from 'swiper'
+import 'swiper/css/swiper.min.css'
 import img1 from '../../assets/images/返回.png'
 import img2 from '../../assets/images/16-36-00.png'
 import img3 from '../../assets/images/分享1.png'
@@ -31,6 +33,42 @@ import {
 import { useHistory } from 'react-router-dom'
 
 const GoodsDetail = (props) => {
+    let rotationImg = [{
+        "id": 1,
+        "picUrl": "https://yanxuan.nosdn.127.net/e1d32c538a9fcf420411592746098ad2.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
+        "linkUrl": "http://localhost:3000/main"
+    },
+    {
+        "id": 2,
+        "picUrl": "https://yanxuan.nosdn.127.net/7e01b30c2c440e118cf09e14c7a69266.jpg?type=webp&imageView&quality=75&thumbnail=750x0",
+        "linkUrl": "http://localhost:3000/main"
+    },
+    {
+        "id": 3,
+        "picUrl": "https://yanxuan.nosdn.127.net/94408b4d014ce6774e8f768bdf9b6f60.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
+        "linkUrl": "http://localhost:3000/main"
+    },
+    {
+        "id": 4,
+        "picUrl": "https://yanxuan.nosdn.127.net/e14d684c9dc43de2af5215c3d49b6870.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
+        "linkUrl": "http://localhost:3000/main"
+    },
+    {
+        "id": 5,
+        "picUrl": "https://yanxuan.nosdn.127.net/7e01b30c2c440e118cf09e14c7a69266.jpg?type=webp&imageView&quality=75&thumbnail=750x0",
+        "linkUrl": "http://localhost:3000/main"
+    },
+    {
+        "id": 6,
+        "picUrl": "https://yanxuan.nosdn.127.net/94408b4d014ce6774e8f768bdf9b6f60.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
+        "linkUrl": "http://localhost:3000/main"
+    },
+    {
+        "id": 7,
+        "picUrl": "https://yanxuan.nosdn.127.net/e14d684c9dc43de2af5215c3d49b6870.jpg?type=webp&amp;imageView&amp;quality=75&amp;thumbnail=750x0",
+        "linkUrl": "http://localhost:3000/main"
+    }
+]
     const history = useHistory()
     const handleClick = () => {
         history.push('/home/main')
@@ -39,9 +77,10 @@ const GoodsDetail = (props) => {
     let [kindstyle,setKindstyle] = useState(0)
     let [name,setName] = useState('20款M1/8G/256G灰N63')
     let [addNum,setAddNum] = useState(1)
-    let [preprice,setPreprice] = useState(6120)
+    let [preprice,setPreprice] = useState(6100)
     let [totalprice,setTotalprice] = useState(6120)
     let kind = ['20款M1/8G/256G灰N63','20款M1/8G/256G银N93', '20款M11/8G/256G金ND3','20款M1/8G/512G灰N73','20款M1/8G/512G银NA3', 'M1芯片256定制16G银','M1芯片256定制16G金','M1芯片1TB定制16G银灰金', 'M1芯片256定制16G金','M1芯片1TB定制16G银灰金','M1芯片256定制16G金', 'M1芯片1TB定制16G银灰金','M1芯片256定制16G金','M1芯片1TB定制16G银灰金', 'M1芯片256定制16G金','M1芯片1TB定制16G银灰金']
+    let kindprice = ['6100','7100', '8100','9100','10100', '6100','7100', '8100','9100','10100','6100','7100', '8100','9100','10100','21000']
     const buyClick = () => {
         setBuy(true)
     }
@@ -50,20 +89,35 @@ const GoodsDetail = (props) => {
     }
     const reduceClick = () => {
         setAddNum(addNum-1)
-        setTotalprice(addNum*preprice)
+        setTotalprice((addNum-1)*preprice)
     }
     const addClick = () => {
         setAddNum(addNum+1)
-        setTotalprice(addNum*preprice)
+        setTotalprice((addNum+1)*preprice)
     }
     const kindClick = (e) => {
         // console.log(e);
         setKindstyle(e.target.id)
         setName(e.target.innerHTML)
+        setPreprice(kindprice[e.target.id])
+        setTotalprice(kindprice[e.target.id])
+        setAddNum(1)
     }
-    // useEffect(() => {
-
-    // }, totalprice)
+    useEffect(() => {
+        setTimeout(() => {
+            new Swiper('.swiper-container', {
+                loop: true,
+                autoplay:{
+                    delay: 1000
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true
+                }
+            })
+        }, 100)
+    }, [])
     return (
         <>
             <div className="goodsdetail" style={buy?{}:{}}>
@@ -72,7 +126,27 @@ const GoodsDetail = (props) => {
                     <div className="goodsdetail-back-title">商品详情</div>
                 </div>
                 <div className="goodsdetail-Rotation">
-                    <img src={img2} alt="" />
+                <div className="rotation-box">
+            <div className="swiper-container">
+                <div className="swiper-wrapper">
+                {
+                    rotationImg.map((item, index) => {
+                        return (
+                            <div 
+                            key={index}
+                            className="swiper-slide">
+                                <a href=''>
+                                    <img className="rotationChart-img"
+                                     src={img2} alt="" />
+                                </a>
+                            </div>
+                        )
+                    })
+                }
+                </div>
+                <div className="swiper-pagination"></div>
+            </div>
+        </div>
                 </div>
                 <div className="goodsdetail-introduction">
                     <div className="goodsdetail-introduction-price">
@@ -222,7 +296,7 @@ const GoodsDetail = (props) => {
                               <img src={img15} alt="" />
                           </div>
                           <div className="">
-                              <div className="buy-img-price">￥{totalprice}</div>
+                              <div className="buy-img-price">￥{preprice}</div>
                               <div className="buy-img-name">已选: {name}</div>
                               <div className="buy-img-num">
                                   <div className="buy-img-add">

@@ -18,12 +18,15 @@ import Loading from '../../baseUI/loading';
 
 const Main = (props) => {
     let [category, setCategory] = useState('0');
+    let [pullUpLoading,setPullUpLoading] = useState(false)
+    let [pullDownLoading,setPullDownLoading] = useState(false)
     // 状态
     const { maindata } = props
     // action
     const { getMainDataDispatch } = props
 
-    const { categoryTypes = [], menuBarData = {},goodData = [] } = maindata
+    const { categoryTypes = [], menuBarData = {}, goodData = [] } = maindata
+    
 
     // console.log(menuBarData, '11111111111111');
     // console.log(goodsData, '222222222222222');
@@ -33,12 +36,19 @@ const Main = (props) => {
         }
 
     }, [])
-
+    
     const handleUpdateCatetory = (val) => {
         setCategory(val);
     }
 
-    // console.log(maindata, '++++++++++++++==');
+      // 顶部下拉刷新
+  const handlePullDown = () => {
+    // pullDownRefresh(category, pageCount);
+  }
+  // 滑到最底部刷新部分的处理
+  const handlePullUp = () => {
+    pullUpRefresh(category, pageCount);
+  }
     return (
 
         <div className="main">
@@ -51,13 +61,15 @@ const Main = (props) => {
                 <Scroll
                     direction="vertical"
                     refresh={false}
-                    pullUpLoading={true}
-                    pullDownLoading={true}
+                    pullUp={handlePullUp}
+                    pullDown={handlePullDown}
+                    pullUpLoading={pullUpLoading}
+                    pullDownLoading={pullDownLoading}
                 >
                     <div className="">
                         <MenuBar menuBarData={menuBarData} />
                         <Chart />
-                        <Maingoods goodData={goodData} oldVal={category}/>
+                        <Maingoods goodData={goodData} oldVal={category} />
                     </div>
                 </Scroll>
             </ListContainer>
