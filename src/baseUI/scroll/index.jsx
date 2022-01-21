@@ -35,7 +35,9 @@ const Scroll = forwardRef((props, ref) => {
 
   const scrollContaninerRef = useRef();
 
-  const { direction, click, refresh, bounceTop, bounceBottom, PullUpLoading, PullDownLoading } = props;
+  const { direction, click, refresh, bounceTop, bounceBottom } = props;
+  // let pullUpLoading = true;
+  // let PullDownLoading = true;
 
   const { pullUp, pullDown, onScroll } = props;
 
@@ -113,8 +115,8 @@ const Scroll = forwardRef((props, ref) => {
       }
     }
   }));
-  // const PullUpdisplayStyle = pullUpLoading ? { display: "" } : { display: "none" };
-  // const PullDowndisplayStyle = pullDownLoading ? { display: "" } : { display: "none" };
+  const PullUpdisplayStyle = true ? { display: "" } : { display: "none" };
+  const PullDowndisplayStyle = true ? { display: "" } : { display: "none" };
 
   return (
     <ScrollContainer ref={scrollContaninerRef}>
@@ -122,7 +124,7 @@ const Scroll = forwardRef((props, ref) => {
       {/* 滑到底部加载动画 */}
       {/* <PullUpLoading style={PullUpdisplayStyle}><Loading></Loading></PullUpLoading> */}
       {/* 顶部下拉刷新动画 */}
-      {/* <PullDownLoading style={PullDowndisplayStyle}><Loading2></Loading2></PullDownLoading> */}
+      <PullDownLoading style={PullDowndisplayStyle}><Loading2></Loading2></PullDownLoading>
     </ScrollContainer>
   );
 })

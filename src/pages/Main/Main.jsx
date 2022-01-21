@@ -44,10 +44,12 @@ const Main = (props) => {
       // 顶部下拉刷新
   const handlePullDown = () => {
     // pullDownRefresh(category, pageCount);
+    // console.log('+++++++++++++++');
   }
   // 滑到最底部刷新部分的处理
   const handlePullUp = () => {
     pullUpRefresh(category, pageCount);
+    // console.log('11111111111111');
   }
     return (
 
